@@ -16,14 +16,14 @@
         <div id="parameters">
             <h4>Input</h4>
             <div id="input_parameters">
-                <label class="w1">Width <em>W<sub>1</sub></em><input type="range" min=1 max=256 step=1 value=32 width=256></input></label>
-                <label class="h1">Height <em>H<sub>1</sub></em><input type="range" min=1 max=256 step=1 value=32 width=256></input></label>
-                <label class="d1">Channels <em>D<sub>1</sub></em><input type="range" min=1 max=256 step=1 value=32 width=256></input></label>
+                <label class="w1">Width <em>W<sub>in</sub></em><input type="range" min=1 max=256 step=1 value=32 width=256></input></label>
+                <label class="h1">Height <em>H<sub>in</sub></em><input type="range" min=1 max=256 step=1 value=32 width=256></input></label>
+                <label class="d1">Channels <em>C<sub>in</sub></em><input type="range" min=1 max=256 step=1 value=32 width=256></input></label>
             </div>
-            <h4>Transpose Convolution</h4>
+            <h4>Transposed Convolution</h4>
             <div id="convolution_parameters">
-                <label class="k">Filter Count <em>K</em><input type="range" min=1 max=128 step=1 value=4></input></label>
-                <label class="f">Spatial Extent <em>F</em><input type="range" min=1 max=9 step=1 value=3></input></label>
+                <label class="f">Filter Count <em>C<sub>out</sub></em><input type="range" min=1 max=128 step=1 value=4></input></label>
+                <label class="k">Kernel Size <em>K</em><input type="range" min=1 max=9 step=1 value=3></input></label>
                 <label class="s">Stride <em>S</em><input type="range" min=1 max=10 step=1 value=1></input></label>
                 <label class="p">Padding <em>P</em><input type="range" min=0 max=8 step=0 value=0></input></label>
                 <label class="op">Output Padding <em>OP</em><input type="range" min=0 max=8 step=0 value=0></input></label>
@@ -37,7 +37,7 @@
             <div id="output"></div>
         </div>
         <div id="credits">
-            This tool is mainly based on <a href="https://madebyollin.github.io/convnet-calculator/" target="_blank">ConvNet Calculator</a> from <a href="https://github.com/madebyollin" target="_blank">madebyollin</a> 
+            This tool is mainly based on <a href="https://madebyollin.github.io/convnet-calculator/" target="_blank">ConvNet Calculator</a> by <a href="https://github.com/madebyollin" target="_blank">madebyollin</a> 
             and the PyTorch's implementation of <a href="https://pytorch.org/docs/stable/generated/torch.nn.ConvTranspose2d.html" target="_blank">nn.ConvTranspose2d</a>.
         </div>
     </main>

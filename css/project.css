@@ -327,7 +327,7 @@ label input {
   float: right;
 }
 #shapes #output::before {
-  content: "Output After Convolution";
+  content: "Output";
 }
 
 #credits {
@@ -362,13 +362,13 @@ em * {
   color: #6604c0;
 }
 
-.k em,
-.k input {
+.f em,
+.f input {
   color: #1889f5;
 }
 
-.f em,
-.f input {
+.k em,
+.k input {
   color: #ff8100;
 }
 
@@ -380,6 +380,11 @@ em * {
 .p em,
 .p input {
   color: #00bcd4;
+}
+
+.op em,
+.op input {
+  color: #021c9c;
 }
 
 #shapes .w1 em::before {
@@ -397,7 +402,7 @@ em * {
 #shapes .h2 em::before {
   content: "Height";
 }
-#shapes .k em::before {
+#shapes .f em::before {
   content: "Channels";
 }
 
