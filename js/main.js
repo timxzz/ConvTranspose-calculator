@@ -20,8 +20,10 @@ function main() {
         input_el.innerHTML = `${wrap_em("w1", v.w1.value)}×
                               ${wrap_em("h1", v.h1.value)}×
                               ${wrap_em("d1", v.d1.value)}`;
-        var w2 = Math.floor((v.w1.value - v.f.value + 2 * v.p.value) / v.s.value + 1);
-        var h2 = Math.floor((v.h1.value - v.f.value + 2 * v.p.value) / v.s.value + 1);
+        // var w2 = Math.floor((v.w1.value - v.f.value + 2 * v.p.value) / v.s.value + 1);
+        // var h2 = Math.floor((v.h1.value - v.f.value + 2 * v.p.value) / v.s.value + 1);
+        var w2 = Math.floor((v.w1.value - 1) * v.s.value - 2 * v.p.value + 1 * (v.f.value - 1) + v.op.value + 1);
+        var h2 = Math.floor((v.h1.value - 1) * v.s.value - 2 * v.p.value + 1 * (v.f.value - 1) + v.op.value + 1);
 
         let message = "";
         if (w2 < 1 || h2 < 1)

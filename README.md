@@ -1,7 +1,6 @@
-# ConvNet Calculator
+# ConvTranspose Calculator
 
-Calculates output shape of convolutional layers based on input shape, stride, kernel size, etc.
+Calculates output shape of convolutional transpose layers based on input shape, stride, kernel size, etc.
 
-[Site here](https://madebyollin.github.io/convnet-calculator/)
+*Mainly based on [ConvNet Calculator](https://madebyollin.github.io/convnet-calculator/)* from [madebyollin](https://github.com/madebyollin) and the implementation of PyTorch's [nn.ConvTranspose2d](https://pytorch.org/docs/stable/generated/torch.nn.ConvTranspose2d.html)
 
-Made while reviewing the [CS231n notes](http://cs231n.github.io/convolutional-networks/).
